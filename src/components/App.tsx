@@ -4,7 +4,9 @@ import Router from "../router/Router";
 const App: React.FC = () => {
 
     return (
-        <Router />
+        <div className="w-screen h-screen">
+            <Router />
+        </div>
     )
 
 }
