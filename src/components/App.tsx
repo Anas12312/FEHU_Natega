@@ -1,11 +1,10 @@
 import React from "react";
+import Router from "../router/Router";
 
 const App: React.FC = () => {
 
     return (
-        <div className="bg-slate-950">
-            Hello Bitch!
-        </div>
+        <Router />
     )
 
 }
