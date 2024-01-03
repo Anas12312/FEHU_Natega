@@ -45,15 +45,15 @@ export default function Welcome() {
                 <div className=''>
                     <div className='ml-[13.5rem] w-[30rem] flex justify-around items-start font-Sansation text-[1.25rem] text-[#F5F5F5]'>
                         <div className='flex-col '>
-                            <img className='w-[7.1875rem] h-[7.1875rem] mb-7' src='../../../public/home/grades.png' />
+                            <img className='w-[7.1875rem] h-[7.1875rem] mb-7' src='../../../home/grades.png' />
                             <div>Get Your Grades</div>
                         </div>
                         <div className=''>
-                            <img className='w-[7.1875rem] h-[7.1875rem] mb-7' src='../../../public/home/leaderboard2.png' />
+                            <img className='w-[7.1875rem] h-[7.1875rem] mb-7' src='../../../home/leaderboard2.png' />
                             <div className='w-[7.1875rem]'>Compare It To Your Colleges</div>
                         </div>
                         <div className=''>
-                            <img className='w-[7.1875rem] h-[7.1875rem] mb-7' src='../../../public/home/analytics2.png' />
+                            <img className='w-[7.1875rem] h-[7.1875rem] mb-7' src='../../../home/analytics2.png' />
                             <div className='w-[7.1875rem]'>And View Your Batch's Analytics</div>
                         </div>
                     </div>

@@ -22,3 +22,36 @@
     background-position: 0% 50%;
   }
 }
+
+.name-field-outline {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  color: black;
+  padding: 0 0.3rem;
+  margin: 0 0.5rem;
+  transition: 0.1s ease-out;
+  transform-origin: left top;
+  pointer-events: none;
+  top: 0;
+  scale: 90%;
+}
+
+.name-field-outline-right {
+  position: absolute;
+  right : 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  color: black;
+  padding: 0 0.3rem;
+  margin: 0 0.5rem;
+  transition: 0.1s ease-out;
+  transform-origin: left top;
+  pointer-events: none;
+  top: 0;
+  scale: 90%;
+}
+
