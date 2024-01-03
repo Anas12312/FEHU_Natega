@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 export default function Welcome() {
     const nav = useNavigate()
     return (
-        <div className='w-full h-full flex flex-col justify-between items-center an-1'>
+        <div className='w-full h-full flex flex-col justify-between items-center bg-[#172554]'>
             <div className='flex w-full h-full justify-start items-center overflow-hidden'>
                 <div className='w-[10rem]'></div>
                 <div className='text-white'>

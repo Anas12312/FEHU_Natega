@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .an-1 {
-  background: linear-gradient(-45deg, #172554, #002491, #172554, #172554);
+  background: linear-gradient(-45deg, #172554, #001657, #172554, #172554);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
