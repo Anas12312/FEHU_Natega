@@ -6,26 +6,37 @@ export default function Welcome() {
     return (
         <div className='w-full h-full flex flex-col justify-between items-center an-1'>
             <div className='flex w-full h-full justify-start items-center'>
-                <div className='w-[9%]'></div>
+                <div className='w-[9%] border border-red-100'></div>
                 <div className=''>
                     <div className='z-30 hover:cursor-pointer absolute left-[9%] top-10'
                         onClick={() => { nav(0) }}>
-                        <img className='w-20' src="../../../logo2.png" alt="" />
+                        <img className='w-20' src="../../../logo2.png" alt="logo" />
                     </div>
                     <div className='z-30'>
-                        <div className='text-gray-200 text-[3.2rem] font-bold mb-5'>
-                            FEHU Natega.
-                        </div>
+                        <div className='inline-block text-gray-200 text-[4rem] font-Sansation'>FEHU</div>
+                        <div className='inline-block text-gray-200 text-[4rem] font-Sansation-Light ml-4'>NATEGA</div>
+                        
                         <div className='text-gray-300 text-xl'>
-                            Welcome to FEHU Grades where you can get your grades easily and fast, <br></br> 
+                            Welcome to FEHU Grades where you can get your grades easily and fast, <br></br>
                             compare it to your colleges and view analysis of your entire batch's grades.
                         </div>
                         <button className="mt-10 group relative min-h-[50px] w-80 font-bold text-xl overflow-hidden rounded-md border border-sky-700 bg-sky-500 text-white shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-white before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-white after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
-                        <span className="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/2 before:z-0 before:h-0 before:w-1/2 before:bg-white before:duration-500 after:absolute after:right-1/2 after:top-0 after:z-0 after:h-0 after:w-1/2 after:bg-white after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
-                        <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-sky-600">Get Your Grades</span>
+                            <span className="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/2 before:z-0 before:h-0 before:w-1/2 before:bg-white before:duration-500 after:absolute after:right-1/2 after:top-0 after:z-0 after:h-0 after:w-1/2 after:bg-white after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                            <span className="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-sky-600">Get Your Grades</span>
                         </button>
                         <div className='mt-4 font-bold text-white'>
                             Created By Anazz & Zyad
+                        </div>
+                    </div>
+                </div>
+                <div className='border mx-10 border-red-950'>
+                    <div className='flex justify-between items-center'>
+                        <div className='w-[40px] h-[40px] bg-sky-50'>
+                            
+                        </div>
+                        <div className='w-[40px] h-[40px] bg-sky-50'>
+                        </div>
+                        <div className='w-[40px] h-[40px] bg-sky-50'>
                         </div>
                     </div>
                 </div>

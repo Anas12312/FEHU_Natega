@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'Sansation': ['SansationRegular', 'sans-serif'],
+        'Sansation-Italic': ['SansationItalic', 'sans-serif'],
+        'Sansation-Bold': ['SansationBold', 'sans-serif'],
+        'Sansation-Light': ['SansationLight', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }
