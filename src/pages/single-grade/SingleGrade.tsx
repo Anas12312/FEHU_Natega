@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
+import BugButton from '../../components/BugButton'
+import CopyRight from '../../components/CopyRight'
+import PlainNavBar from '../../components/PlainNavBar'
 
 interface Record {
     courseName: string,
@@ -89,18 +92,7 @@ export default function SingleGrade() {
     return (
         <div className='h-screen w-screen flex-col justify-start items-center'>
 
-            <div className='bg-[#172554] h-[4rem] w-full flex justify-center items-center'>
-                <div className='w-[70rem] h-full'>
-                    <div className='h-full flex justify-start items-center'>
-                        <div className='inline-block font-Sansation-Bold text-[#FFD029] text-[1.5rem]'>
-                            FEHU
-                        </div>
-                        <div className='inline-block ml-2 font-Sansation-Light text-white text-[1.5rem]'>
-                            NATEGA
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <PlainNavBar />
             <div className='bg-white h-[calc(100%-4rem)] flex justify-center items-start'>
 
                 <div className='flex-col justify-center items-center w-[70rem] rounded-[0.5rem]'>
@@ -177,14 +169,8 @@ export default function SingleGrade() {
                 </div>
 
             </div>
-            <div className='bg-[#740000] bg-opacity-70 fixed left-0 -ml-[10.5rem] bottom-14 rounded-r-[0.4375rem] w-[14rem] h-[3.5rem]
-            hover:-ml-0 hover:transition-all hover:ease-out
-            font-Sansation-Bold text-white flex justify-start px-5 text-lg items-center'>
-                <img className='w-[2.5625rem] h-[2.5rem] absolute right-[0.55rem] top-[0.5rem]'
-                    src='./../../../single_grade/bug2.png' />
-                Report A Problem
-            </div>
-            <div className='text-[1.375rem] absolute bottom-[1.5rem] right-[2.5rem] font-Sansation-Bold'>&copy; 2023 AZ</div>
+            <BugButton />
+            <CopyRight />
         </div>
     )
 }
