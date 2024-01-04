@@ -4,6 +4,7 @@ import Welcome from "../pages/welcome/Welcome";
 import Home from "../pages/home/Home";
 import SingleGrade from "../pages/single-grade/SingleGrade";
 import NotFound from "../pages/not-found/NotFound";
+import Search from "../pages/search/Search";
 
 const Router: React.FC = () => {
     const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const Router: React.FC = () => {
         {
             path: "/grade/:id",
             element: <SingleGrade/>,
+        },
+        {
+            path: "/search",
+            element: <Search/>,
         },
         {
             path: '*',
