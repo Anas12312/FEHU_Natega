@@ -123,7 +123,7 @@ export default function SingleGrade() {
                     flex justify-between items-center'>
                         <div className='w-[23.5%] h-full relative flex justify-start pl-4 items-center border-[2px] border-[#B4B2B2] rounded-[0.3125rem]'>
                             <input className='name-field font-Sansation-Bold text-[1.25rem]' value={studnetData.studentId} disabled />
-                            <label className='name-field-outline font-Sansation-Light text-[1.125rem]'>Stident ID</label>
+                            <label className='name-field-outline font-Sansation-Light text-[1.125rem]'>Student ID</label>
                         </div>
                         <div className='w-[23.5%] h-full relative flex justify-start pl-4 items-center border-[2px] border-[#B4B2B2] rounded-[0.3125rem]'>
                             <input className='name-field font-Sansation-Bold text-[1.25rem]' value={studnetData.department} disabled />
