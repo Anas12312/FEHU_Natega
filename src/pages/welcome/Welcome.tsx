@@ -9,7 +9,7 @@ export default function Welcome() {
                 <div className='w-[10rem]'></div>
                 <div className='text-white'>
                     <div className='z-30 hover:cursor-pointer absolute left-[10rem] top-10'
-                        onClick={() => { nav(0) }}>
+                        onClick={() => { nav('/') }}>
                         <img className='w-[4.6875rem] h-[2.6875rem]' src="../../../logo2.png" alt="logo" />
                     </div>
                     <div className='z-30'>
@@ -24,13 +24,17 @@ export default function Welcome() {
                         </div>
 
                         <div className='flex justify-between h-[5.125rem] w-[32rem] font-Sansation-Bold'>
-                            <button className='w-[15rem] rounded-[0.4375rem] bg-[#AC8601]
+                            <button onClick={() => {
+                                nav('/search')
+                            }} className='w-[15rem] rounded-[0.4375rem] bg-[#AC8601]
                                 hover:bg-[#bb9200] hover:transition
                             '>
                                 GET YOUR GRADES
                             </button>
 
-                            <button className='w-[15rem] bg-transparent border-white border-[3px] rounded-[0.4375rem]
+                            <button onClick={() => {
+                                nav('/home')
+                            }} className='w-[15rem] bg-transparent border-white border-[3px] rounded-[0.4375rem]
                                 hover:bg-white hover:text-black hover:transition-all 
                             '>
                                 YOUR BATCH'S GRADES
