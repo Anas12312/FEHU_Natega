@@ -5,6 +5,7 @@ import Home from "../pages/home/Home";
 import SingleGrade from "../pages/single-grade/SingleGrade";
 import NotFound from "../pages/not-found/NotFound";
 import Search from "../pages/search/Search";
+import { Batch } from "../pages/batch/Batch";
 
 const Router: React.FC = () => {
     const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const Router: React.FC = () => {
         {
             path: "/search",
             element: <Search/>,
+        },
+        {
+            path: "/batch/:dep/:year",
+            element: <Batch />,
         },
         {
             path: '*',
