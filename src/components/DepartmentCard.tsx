@@ -1,11 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 interface DepartmentProps {
     imgUrl: string,
-    name: string
+    name: string,
+    dep: string
 }
 
 export default function DepartmentCard(props: DepartmentProps) {
+    const nav = useNavigate()
     return (
         <div className={`relative w-full h-[9rem] bg-white shadow-md flex justify-center items-center bg-cover rounded-[0.3125rem] group`}
             style={{backgroundImage: `url('../../departments/${props.imgUrl}')`}}
@@ -19,28 +22,28 @@ export default function DepartmentCard(props: DepartmentProps) {
                                 ">
                 <div className="w-full h-full bg-[#FFD029] bg-opacity-80 transition flex justify-center items-center
                                      text-white text-[1.875rem] select-none hover:cursor-pointer group">
-                    <div className="bg-[#172554] w-[3rem] h-[3rem] rounded-md flex justify-center items-center 
+                    <div onClick={()=>{nav(`/batch/${props.dep}/1`)}} className="bg-[#172554] w-[3rem] h-[3rem] rounded-md flex justify-center items-center 
                                         hover:bg-[#293764]">
                         1
                     </div>
                 </div>
                 <div className="w-full h-full bg-[#FFD029] bg-opacity-80 transition flex justify-center items-center
                                      text-white text-[1.875rem] select-none hover:cursor-pointer group">
-                    <div className="bg-[#172554] w-[3rem] h-[3rem] rounded-md flex justify-center items-center 
+                    <div onClick={()=>{nav(`/batch/${props.dep}/2`)}} className="bg-[#172554] w-[3rem] h-[3rem] rounded-md flex justify-center items-center 
                                         hover:bg-[#293764]">
                         2
                     </div>
                 </div>
                 <div className="w-full h-full bg-[#FFD029] bg-opacity-80 transition flex justify-center items-center
                                      text-white text-[1.875rem] select-none hover:cursor-pointer group">
-                    <div className="bg-[#172554] w-[3rem] h-[3rem] rounded-md flex justify-center items-center 
+                    <div onClick={()=>{nav(`/batch/${props.dep}/3`)}} className="bg-[#172554] w-[3rem] h-[3rem] rounded-md flex justify-center items-center 
                                         hover:bg-[#293764]">
                         3
                     </div>
                 </div>
                 <div className="w-full h-full bg-[#FFD029] bg-opacity-80 transition flex justify-center items-center
                                      text-white text-[1.875rem] select-none hover:cursor-pointer group">
-                    <div className="bg-[#172554] w-[3rem] h-[3rem] rounded-md flex justify-center items-center 
+                    <div onClick={()=>{nav(`/batch/${props.dep}/4`)}} className="bg-[#172554] w-[3rem] h-[3rem] rounded-md flex justify-center items-center 
                                         hover:bg-[#293764]">
                         4
                     </div>
